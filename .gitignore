@@ -1,5 +1,4 @@
 .DS_Store
-dist/js/*
+dist/js/*.js
 node_modules/
 
-ss

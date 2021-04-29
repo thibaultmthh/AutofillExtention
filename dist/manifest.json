@@ -1,8 +1,8 @@
 {
-    "name": "TS/R/WP Chrome Extension",
+    "name": "SquareFNF",
     "version": "0.0.1",
     "manifest_version": 2,
-    "description": "Boilerplate for a Chrome extension with TypeScript, React, and Webpack.",
+    "description": "SquareFNF autofill",
     "homepage_url": "https://duo.com/labs",
     "icons": {
       "16": "icons/icon16.png",
@@ -21,10 +21,26 @@
       "persistent": true
     },
     "permissions": [
-      "https://*/*"
+      "https://*/*","storage"
     ],
     "content_security_policy": "default-src 'self';",
     "content_scripts": [
+      {
+        "matches": [
+          "https://*.metalabs.gg/*"
+        ],
+        "js": [
+          "js/sites/metalabs.js"
+        ]
+      },
+      {
+        "matches": [
+          "https://*.supremenewyork.com/*"
+        ],
+        "js": [
+          "js/sites/supreme.js"
+        ]
+      },
       {
         "matches": [
           "https://*/*"

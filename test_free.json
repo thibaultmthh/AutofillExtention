@@ -1,0 +1,29 @@
+{
+  "props": {
+    "pageProps": {
+      "timestamp": 1619723902003,
+      "account": {
+        "name": "SquareFNF",
+        "active": true,
+        "domain": "squarefnf.metalabs.gg",
+        "stripe_account": "acct_1INIqxCCbLORiLvb",
+        "website_url": "",
+        "settings": {
+          "branding": {
+            "logo": "https://cdn.discordapp.com/attachments/819323747701227541/822520887331913728/e-cVcWRe_400x400.png",
+            "dark": false,
+            "background": "https://cdn.discordapp.com/attachments/819323747701227541/822521220141940765/unknown.png"
+          },
+          "integrations": { "google_analytics_tracking_id": null, "google_tag_manager_container_id": null }
+        },
+        "id": "kxqzuLNShfbHb-7YtP1g9"
+      }
+    },
+    "__N_SSP": true
+  },
+  "page": "/purchase/success",
+  "query": { "license": "SQUARE-AFMS-EZVW-GIQQ-AFXL" },
+  "buildId": "cIrZ5uB7C7N2wapgNFetd",
+  "isFallback": false,
+  "gssp": true
+}

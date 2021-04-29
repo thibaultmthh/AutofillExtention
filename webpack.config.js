@@ -1,4 +1,5 @@
 const path = require('path');
+const glob = require("glob");
 
 module.exports = {
     mode: "development",
@@ -8,10 +9,14 @@ module.exports = {
         content: './src/app/content.ts',
         background: './src/app/background.ts',
         popup: './src/ui/popup.tsx',
+        ...glob.sync('./src/app/sites/*.ts').reduce(function (obj, el) {
+            obj["sites/" + path.parse(el).name] = el;
+            return obj
+        }, {})
     },
 
     output: {
-        path: path.resolve(__dirname, 'dist/js'),
+        path: path.resolve(__dirname, 'dist/js/'),
         filename: '[name].js'
     },
 

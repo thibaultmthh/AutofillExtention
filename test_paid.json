@@ -1,0 +1,164 @@
+{
+    "props": {
+        "pageProps": {
+            "cart_id": "8335808262b3f354c7f1c7db33ca2559750a316e38abd3bdb5809adf04cff29b",
+            "cart_hold": false,
+            "timestamp": 1619730404286,
+            "account": {
+                "name": "SquareFNF",
+                "plan": "business",
+                "active": true,
+                "domain": "squarefnf.metalabs.gg",
+                "stripe_account": "acct_1INIqxCCbLORiLvb",
+                "guild": "770211428656349205",
+                "support_email": "square.fnf1@gmail.com",
+                "website_url": "",
+                "name_placeholder": "Lebron James",
+                "email_placeholder": "lebron@gmail.com",
+                "settings": {
+                    "branding": {
+                        "logo": "https://cdn.discordapp.com/attachments/819323747701227541/822520887331913728/e-cVcWRe_400x400.png",
+                        "dark": false,
+                        "background": "https://cdn.discordapp.com/attachments/819323747701227541/822521220141940765/unknown.png"
+                    },
+                    "integrations": {
+                        "google_analytics_tracking_id": null,
+                        "google_tag_manager_container_id": null
+                    },
+                    "legal": {
+                        "terms_of_service_url": "",
+                        "privacy_policy_url": ""
+                    },
+                    "payments": {
+                        "cancel_action": "remove_all_roles",
+                        "collect_billing_address": false,
+                        "require_login": false
+                    },
+                    "bot_protection": {
+                        "enabled": false
+                    }
+                },
+                "id": "kxqzuLNShfbHb-7YtP1g9"
+            },
+            "release": {
+                "trial_period_days": null,
+                "lock_to_user": null,
+                "initial_fee": null,
+                "plan": {
+                    "account": "kxqzuLNShfbHb-7YtP1g9",
+                    "active": true,
+                    "product": "prod_JHIUftHCkA5uxE",
+                    "price": "price_1IejtqCCbLORiLvbP6hnsE7g",
+                    "name": "monthlies",
+                    "recipe": "discord",
+                    "options": {
+                        "roles": ["812406580947451965"],
+                        "guild": "770211428656349205",
+                        "cancel_action": "remove_all_roles"
+                    },
+                    "description": null,
+                    "amount": 100,
+                    "created": 1618072990317,
+                    "currency": "usd",
+                    "recurring": {
+                        "interval": "month",
+                        "interval_count": 1
+                    },
+                    "type": "recurring",
+                    "roles": ["812406580947451965"],
+                    "id": "Ogrchsie2EDtH2_JdeCHP"
+                },
+                "out_of_stock": false,
+                "id": "i8mrgXOzJ2QaxOhMJGrEG",
+                "type": "fcfs"
+            }
+        },
+        "__N_SSP": true
+    },
+    "page": "/purchase",
+    "query": {
+        "password": "releasessss"
+    },
+    "buildId": "cIrZ5uB7C7N2wapgNFetd",
+    "isFallback": false,
+    "gssp": true
+}
+
+
+
+curl 'https://api.stripe.com/v1/payment_methods'\ -
+    X 'POST'\ -
+    H 'Accept: application/json'\ -
+    H 'Content-Type: application/x-www-form-urlencoded'\ -
+    H 'Origin: https://js.stripe.com'\ -
+    H 'Content-Length: 606'\ -
+    H 'Accept-Language: fr-fr'\ -
+    H 'Host: api.stripe.com'\ -
+    H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15'\ -
+    H 'Referer: https://js.stripe.com/'\ -
+    H 'Accept-Encoding: gzip, deflate, br'\ -
+    H 'Connection: keep-alive'\
+    --data 'type=card&billing_details[name]=thibault+mathian&billing_details[email]=thibault.mathian%40free.fr&card[number]=5355861838818404&card[cvc]=323&card[exp_month]=05&card[exp_year]=23&guid=f4e5d353-e559-4c46-8915-72b9167534ec3fac93&muid=299b9e2f-26bd-4ad2-a7e4-09f3fdccbd5850fa20&sid=72f942be-ebbb-4e23-bf03-0e804af6cb517e0743&payment_user_agent=stripe.js%2F0a5b0de46%3B+stripe-js-v3%2F0a5b0de46&time_on_page=177543&referrer=https%3A%2F%2Fsquarefnf.metalabs.gg&key=pk_live_51GXa1YLZrAkO7Fk2tcUO7vabkO7sgDamOww2OPYQVFhPZOllT75f7owzIOlP75MMdDXHKoy6wPt40HsuQDObpkHv004T74fAzs&_stripe_account=acct_1INIqxCCbLORiLvb'
+
+{
+    "id": "pm_1Ilh7CCCbLORiLvbAVHAk88I",
+    "object": "payment_method",
+    "billing_details": {
+        "address": {
+            "city": null,
+            "country": null,
+            "line1": null,
+            "line2": null,
+            "postal_code": null,
+            "state": null
+        },
+        "email": "thibault.mathian@free.fr",
+        "name": "thibault mathian",
+        "phone": null
+    },
+    "card": {
+        "brand": "mastercard",
+        "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": null
+        },
+        "country": "FR",
+        "exp_month": 5,
+        "exp_year": 2023,
+        "funding": "debit",
+        "generated_from": null,
+        "last4": "8404",
+        "networks": {
+            "available": [
+                "mastercard"
+            ],
+            "preferred": null
+        },
+        "three_d_secure_usage": {
+            "supported": true
+        },
+        "wallet": null
+    },
+    "created": 1619730583,
+    "customer": null,
+    "livemode": true,
+    "type": "card"
+}
+
+curl 'https://portal-api.metalabs.io/v1/checkouts'\ -
+    X 'POST'\ -
+    H 'Content-Type: application/json;charset=utf-8'\ -
+    H 'Accept: application/json, text/plain, */*'\ -
+    H 'Accept-Language: fr-fr'\ -
+    H 'Accept-Encoding: gzip, deflate, br'\ -
+    H 'Host: portal-api.metalabs.io'\ -
+    H 'Origin: https://squarefnf.metalabs.gg'\ -
+    H 'Content-Length: 178'\ -
+    H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15'\ -
+    H 'Referer: https://squarefnf.metalabs.gg/'\ -
+    H 'Connection: keep-alive'\ -
+    H 'x-amz-cf-id: null'\ -
+    H 'x-amz-req-id: null'\ -
+    H 'Meta-Labs-Account: kxqzuLNShfbHb-7YtP1g9'\
+    --data - binary '{"release":"i8mrgXOzJ2QaxOhMJGrEG","billing_details":{"name":"thibault mathian","email":"thibault.mathian@free.fr","address":null},"payment_method":"pm_1Ilh7CCCbLORiLvbAVHAk88I"}'
